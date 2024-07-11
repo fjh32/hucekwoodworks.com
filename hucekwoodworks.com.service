@@ -1,0 +1,13 @@
+#Put me in /lib/systemd/system/
+[Unit]
+Description=hucekwoodworks c++ site
+After=network.target
+
+[Service]
+Type=simple
+User=frank
+ExecStart=/home/frank/Code/hucekwoodworks.com/start.sh
+Restart=always # or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target

@@ -1,132 +1,84 @@
-.photodiv {
-  position:absolute;
-  display:block;
-  height:100%;
-  width: 100%;
-  /* background-size: 100% 100%; */
-  background-size: cover;
-  /* overflow:hidden; */
-}
-.bgimg {
-  background-image: url("/photos/website_backdrop.jpg");
-  display:block;
-  /* height: 100vh;
-  width: 100vw; */
-  /* min-height: 100%; */
-  height:100%;
-  width: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  object-fit: contain;
-  /* background-size: cover; */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sofia', sans-serif;
 }
 
-.caption {
-  text-align: center;
-  color: #000;
+h2 {
+
 }
 
-.caption span.border {
-  background-color: #111;
+header {
+  background-color: #333;
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #9dae78;
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  li {
-    float: left;
-  }
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 30px 16px;
-    text-decoration: none;
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #5c702f;
-  }
+nav ul li a:hover {
+  color: #4CAF50; /* Change to your desired hover color */
+}
 
-  html {
-    background-color: #9e9182;
-    color: #333;
-    font-family: Arial, sans-serif;
-  }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    padding: 10px;
-    overflow-wrap: normal;
-  }
-  .grid-item {
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
-    padding: 10px;
-    font-size: 30px;
-    text-align: left;
-    /* overflow-wrap: normal;
-    word-break: break-all; */
-  }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
 
-  img .logo{
-    object-fit: contain;
-    display: block;
-    width: auto;
-    height : auto;
-    max-height: 100%;
-    max-width: 100%;
-  }
+.photo-grid img {
+  width: 100%;
+  height: auto;
+}
 
-  t1 {
-    font-size: 40px;
-    font-weight: bold;
-  }
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height to make sure the body takes up the full screen */
+  margin: 0; /* Remove default margin */
+}
 
-  t2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
+.center-div {
+  width: 50%; /* Example width */
+  height: 50%; /* Example height */
+  /* Additional styling for the centered div */
+}
 
-  body, html {
-    height: 100%;
-    /* width:100%; */
-    margin: 0;
-  }
+.image-container {
+  width: 100%;
+  max-width: 100%;
+}
 
-
-  .body {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 100vh; /* Use viewport height to make sure the body takes up the full screen */
-    margin: 0; /* Remove default margin */
-  }
-
-  .image-container {
-      width: 70%;
-      max-width: 100%;
-      height: 50%;
-  }
-
-  /* Make the image responsive */
-  .image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      max-width: 100%;
-  }
+/* Make the image responsive */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
